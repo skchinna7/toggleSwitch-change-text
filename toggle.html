@@ -101,28 +101,6 @@
     		</label>        
         	<p id="demo" class="tt">Disable To Not To Refer To Anyone</p>
 	    </div>
-        <div class="new-content" id="new-content">
-            <input type="button" name="btn1" value="Add" id="add">
-            <input type="button" name="bnt2" value="Remove" id="remove">
-            <div class="new-content-inner" id="new-content-inner">
-                <input type="text" name="text" placeholder="Enter Domain Name">
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function() {
-                var input = 1;
-                $("#add").click(function() {
-                    input++;
-                    $("#new-content-inner").append('<input type="text" name="text" placeholder="Enter Domain Name">');
-                });
-                $("#remove").click(function() {
-                    if($("#new-content-inner").length > 0) {
-                        input--;
-                        $("#new-content-inner").last().remove();
-                        
-                    }
-                 });
-            });
-        </script>
+        
     </body>
 </html> 
